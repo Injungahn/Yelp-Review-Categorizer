@@ -16,9 +16,9 @@ San_Francisco_restaurant_reviews_first_5.csv (40_930, 4)
 
  - 5 Restaurants with 40_930 total reviews
     
-San_Francisco_restaurant_reviews_sentences.csv (469_663, 4) 
+San_Francisco_restaurant_reviews_sentences.csv (469_122, 4) 
 
- - 50 Restaurants with their reviews parsed into 469_663 sentences
+ - 50 Restaurants with their reviews parsed into 469_122 sentences
 
 San_Francisco_restaurant_reviews_first_5_sentences.csv (390_257, 4)
 
@@ -37,7 +37,7 @@ San_Francisco_restaurant_reviews_first_5.csv (40_930, 4)
 |review_text|object|Text of review|
 
 
-San_Francisco_restaurant_reviews_sentences.csv (469_663, 4) 
+San_Francisco_restaurant_reviews_sentences.csv (469_122, 4) 
 San_Francisco_restaurant_reviews_first_5_sentences.csv (390_257, 4)
 
 |Feature|Type|Description|
@@ -65,15 +65,20 @@ San_Francisco_restaurant_reviews_first_5_sentences.csv (390_257, 4)
 
 ### Cleaning
 
-- Removed html characters '<\br>'
-- Replaced html characters &#39, &#34, &amp
+- Removed html characters '<\br>' and html links
+- Replaced html characters &#39, &#34, &amp, \xa0
 - After creating sentences some of the sentences made were white spaces or emojis. Used regex to clean out sentences that didn't have any alphabetical characters or were just white spaces.
 
 ### EDA
 
-- The average review length: 682 characters
+- The average review length: 677 characters
 - The average restaurant rating: 4.25
 - Minumum and maximum restaurant rating: 4-5
+- The average sentences per review: 9
+<img src="./images/histogram_review_text.png" style="height: 400px width: 500px">
+
+<img src="./images/histogram_sentence_count.png" style="height: 400px width: 500px">
+
 
 ## Creating sentences
 
