@@ -1,0 +1,13 @@
+service
+staff
+friendly
+waiter
+customer
+ask
+attentive
+told
+tip
+waitress
+employees
+employee
+server

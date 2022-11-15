@@ -67,7 +67,7 @@ San_Francisco_restaurant_reviews_first_5_sentences.csv (389_760, 4)
 
 - Removed html characters '<\br>' and html links
 - Replaced html characters &#39, &#34, &amp, \xa0
-- After creating sentences some of the sentences made were white spaces or emojis. Used regex to clean out sentences that didn't have any alphabetical characters or were just white spaces.
+- After creating sentences, some of the sentences were white spaces or emojis. Used regex to clean out sentences that didn't have any alphabetical characters or were just white spaces.
 
 ### EDA
 
@@ -153,6 +153,28 @@ First 5 restaurants from the 50
 
 2. Of the sentences that weren't categorized many were sentiments of the restaurant as a whole rather. Since the average rating of each of these restaurants was 4.25 these sentiments would've boosted the sentiment score.
 
+Ratings for 1000 Reviews
+
+|Restaurant|Yelp Rating|Food Rating|Service Rating|Time Rating|
+|---|---|---|---|---|
+|Brenda's French Soul Food|4.0|3.228686|3.335638|2.991169|
+|House of Prime Rib|4.0|3.122370|3.290248|2.959223|
+|Gary Danko|4.5|3.279305|3.420495|3.125987|
+|Tartine Bakery|4.0|3.229126|2.938706|2.985375|
+|Hog Island Oyster|4.5|3.350521|3.460033|3.202031|
+
+Ratings for All Reviews
+
+|Restaurant|Yelp Rating|Food Rating|Service Rating|Time Rating|
+|---|---|---|---|---|
+|Brenda's French Soul Food|4.0|3.249160|3.413877|3.013338|
+|House of Prime Rib|4.0|3.106466|3.369225|2.999174|
+|Gary Danko|4.5|3.263361|3.340689|3.095244|
+|Tartine Bakery|4.0|3.244576|3.033528|3.024083|
+|Hog Island Oyster|4.5|3.334523|3.499479|3.083014|
+
+- Wanted to evaluate both to see if the vast number of reviews changed any of the numbers
+- Comparing the ratings for 1000 reviews and all of the reviews the numbers are fairly similar
 
 ## Conclusions
 
