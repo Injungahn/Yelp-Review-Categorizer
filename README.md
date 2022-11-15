@@ -20,7 +20,7 @@ San_Francisco_restaurant_reviews_sentences.csv (469_122, 4)
 
  - 50 Restaurants with their reviews parsed into 469_122 sentences
 
-San_Francisco_restaurant_reviews_first_5_sentences.csv (390_257, 4)
+San_Francisco_restaurant_reviews_first_5_sentences.csv (389_760, 4)
 
  - 5 Restaurants with their reviews parsed into 390257 sentences
 
@@ -38,7 +38,7 @@ San_Francisco_restaurant_reviews_first_5.csv (40_930, 4)
 
 
 San_Francisco_restaurant_reviews_sentences.csv (469_122, 4) 
-San_Francisco_restaurant_reviews_first_5_sentences.csv (390_257, 4)
+San_Francisco_restaurant_reviews_first_5_sentences.csv (389_760, 4)
 
 |Feature|Type|Description|
 |---|---|---|
@@ -86,7 +86,7 @@ San_Francisco_restaurant_reviews_first_5_sentences.csv (390_257, 4)
 - Then transformed the dataframe so each row held a sentence of a review
 - From the 50_000 reviews 469_663 sentences were found
 
-- From the 40_930 reviews found for the 5 restaurants 390_257 sentences were found
+- From the 40_930 reviews found for the 5 restaurants 389_760 sentences were found
 
 ## Sentence Categorization
 
@@ -108,10 +108,10 @@ San_Francisco_restaurant_reviews_first_5_sentences.csv (390_257, 4)
 
 |Sentence Category|Count|
 |---|---|
-|Food|261_690|
-|Service|39_230|
-|Time|61_120|
-|Uncategorized|148_051|
+|Food|261_459|
+|Service|39_215|
+|Time|61_131|
+|Uncategorized|149_072|
 
 - After parsing through the sentences many of the sentences were still in the wrong category. Some of the uncategorized sentences referred to food, but had specific food items that weren't caught by the food key words. Some sentences referred to the food, but didn't have any key words referring to the food so those weren't picked up as well. 
 
@@ -137,13 +137,15 @@ San_Francisco_restaurant_reviews_first_5_sentences.csv (390_257, 4)
 
 ## Sentiment Analysis of Categorized Sentences
 
+First 5 restaurants from the 50
+
 |Restaurant|Yelp Rating|Food Rating|Service Rating|Time Rating|
 |---|---|---|---|---|
 |Gary Danko|4.5|3.26|3.34|3.10|
 |State Bird Provisions|4.0|3.24|3.39|3.08|
-|Chapeau|4.5|3.34|3.51|3.11|
+|Chapeau|4.5|3.34|3.51|3.17|
 |Nopa|4.0|3.34|3.51|3.11|
-|Lolinda|4.0|3.31|3.34|3.17|
+|Lolinda|4.0|3.32|3.35|3.17|
 
 - The resulting scores for the categories were all lower than the average scores. There are a few factors going into this.
     
